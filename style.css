@@ -1,0 +1,246 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+    color: #0A2647;
+}
+
+.containerFoto {
+    display: flex;
+}
+
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+    flex: 1;
+    margin: 5px;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+
+h4 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: #E8D5C4;
+    color: #0A2647;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 18px;
+    opacity: 0;
+}
+.description {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #E8D5C4;
+    color: #0A2647;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.price {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: #E8D5C4;
+    color: #0A2647;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 24px;
+    opacity: 0;
+}
+
+.selected {
+    flex: 4;
+}
+.selected h4 {
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+.selected .description {
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+.selected .price {
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+.one {
+    background-image: url(01apart.jpg);
+}
+.two {
+    background-image: url(02apart.jpg);
+}
+.three {
+    background-image: url(03apart.jpg);
+}
+.four {
+    background-image: url(04apart.jpg);
+}
+.five {
+    background-image: url(05apart.jpg);
+}
+.six {
+    background-image: url(06apart.jpg);
+}
+
+
+
+/* Hotel calculate */
+
+.sectionTwo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#containerOne, #containerTwo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(232, 213, 196, 0.6);
+    width: 600px;
+    height: 850px;
+    color: #0A2647;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.parFirst {
+    margin: 40px 10px -60px;
+    padding: 20px 20px 60px;
+    align-self: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    color: #0A2647;
+}
+
+.formOne, .formTwo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    padding: 40px 20px 0px;
+}
+
+
+
+#addServiceOne, #btnOne, #chooseTax, #btnTwo {
+    background-color: #3A98B9;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 6px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+
+#service, #tax {
+    font-family: 'Nunito', sans-serif;
+    display: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 6px;
+    
+}
+
+#showTotalAmount, #showTotal  {
+    display: flex;
+    justify-content: center;
+}
+
+#fullPrice, #fullAddService, #totalAmount, #adultSum, #kidSum, #totalTax {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFF1DC;
+    margin: 12px;
+    padding: 20px;
+    border-radius: 6px;
+    width: 100px;
+}
+
+.headingForm {
+    display: flex;
+    justify-content: center;
+}
+label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+input {
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+.text-input {
+    background-color:  #EADBC8;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin: 10px ;
+}
+
+.btnMessage {
+    background-color: #3A98B9;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 80px;
+    margin: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+
+
+@media all and (max-width: 800px) {
+    #containerOne, #containerTwo{
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    #par {
+        font-size: 20px;
+        }
+        #fullPrice, #fullAddService, #totalAmount, #adultSum, #kidSum, #totalTax  {
+            margin: 8px;
+            padding: 14px;
+            width: 80px;
+        }
+        p, span {
+            font-size: 14px;
+        }
+
+}
+
+@media all and (max-width: 500px) {
+    #containerOne, #containerTwo {
+        width: 350px;
+        height: 750px;
+    }
+    #par {
+        font-size: 16px;
+        }
+        #fullPrice, #fullAddService, #totalAmount, #adultSum, #kidSum, #totalTax  {
+            margin: 6px;
+            padding: 10px;
+            width: 60px;
+        }
+        p, span {
+            font-size: 12px;
+        }
+
+}

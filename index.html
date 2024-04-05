@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <title>Hotel</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Hotel in Montenegro!</h1>
+    </div>
+    <div class="containerFoto">
+        <div class="item one selected">
+            <h4>Arya </h4>
+            <p class="description">Cozy double room with mountain view</p>
+            <p class="price">50€</p>
+        </div>
+
+        <div class="item two">
+            <h4>Valery </h4>
+            <p class="description">Spacious Triple Studio</p>
+            <p class="price">70€</p>
+        </div>
+
+        <div class="item three">
+            <h4>Juliet</h4>
+            <p class="description">Quadruple room with a cozy kitchen and a spacious balcony</p>
+            <p class="price">80€</p>
+        </div>
+
+        <div class="item four">
+            <h4>Diana</h4>
+            <p class="description">Six-bed room with separate living room</p>
+            <p class="price">100€</p>
+        </div>
+
+        <div class="item five">
+            <h4>Eva</h4>
+            <p class="description">Six-bed room with mountain view</p>
+            <p class="price">100€</p>
+        </div>
+
+        <div class="item six">
+            <h4>Candy</h4>
+            <p class="description">Double studio room with sea view</p>
+            <p class="price">60€</p>
+        </div>
+    </div>
+
+    <!--  Hotel calculate -->
+    <div class="sectionTwo">
+        <div id="containerOne">
+            <h2 class="parFirst">Calculate the cost of your holiday in our hotel</h2>
+        <form class="formOne">
+            <p>Room price</p>
+            <input id="room" type="text" placeholder="Price for one night. €">
+
+            <p>Number of nights</p>
+            <input  id="night" type="text" placeholder="How many nights?">
+
+            <p>Do you want additional service?</p>
+            <button id="addServiceOne">Add a service</button>
+            <select id="service">
+                <option disabled>Select an option</option>
+                <option value="50.00">Transfer 50€</option>
+                <option value="10.00">Breakfast 10€</option>
+                <option value="40.00">Cleaning 40€</option>
+                <option value="30.00">Babysitter 30€</option>
+                <option value="00.00" selected>No service</option>
+            </select>
+            <button id="btnOne">Calculate</button>
+        </form>
+        <div id="showTotalAmount">
+            <div id="fullPrice">
+                <p>Full amount</p>
+                    <span>€</span>
+                    <span id="sumPrice"></span>
+                    <p>for</p>
+                    <span id="sumNight"></span>
+                    <span>night(s)</span>
+            </div>
+
+            <div id="fullAddService">
+                <p>Service</p>
+                <span>€</span>
+                <span id="sumService"></span>
+            </div>
+
+            <div id="totalAmount">
+                <p>Total</p>
+                <span>€</span>
+                <span id="roomAndService"></span>
+                <p>for</p>
+                <span id="sumNights"></span>
+                <span>night(s)</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Tax -->
+
+    <div id="containerTwo">
+        <h2 class="parFirst">Calculate your tourist's Tax</h2>
+        <form class="formTwo">
+            <p>Number of adults</p>
+            <input  id="adultsNumber" type="text" placeholder="How many adults??">
+            <p>Number of kids</p>
+            <input  id="kidsNumber" type="text" placeholder="How many kids?">
+            <p>Number of nights</p>
+            <input id="nightTax" type="text" placeholder="How many nights?">
+            <p>Choose your tax</p>
+            <button id="chooseTax">Tax</button>
+            <select id="tax">
+                <option disabled>Select an option</option>
+                <option value="00.00" selected>Kid 0-12 age. 0€.</option>
+                <option value="00.50">Teen 12-18 age. 0.5€.</option>
+            </select>
+            <button id="btnTwo">Calculate</button>
+        </form>
+        <div id="showTotal">
+            <div id="adultSum">
+                <p>Adult tax</p>
+                <span id="adultTax"></span>
+                <p>for</p>
+                <span class="sumNightAdult"></span>
+                <span>night(s)</span>
+            </div>
+            <div id="kidSum">
+                <p>Kids tax</p>
+                <span id="kidTax"></span>
+                <p>for</p>
+                <span class="sumNightKid"></span>
+                <span>night(s)</span>
+            </div>
+            <div id="totalTax">
+                <p>Total</p>
+                <span id="adultAndKid"></span>
+                <p>for</p>
+                <span class="sumNights"></span>
+                <span>night(s)</span>
+            </div>
+        </div>
+    </div>
+    </div> 
+    
+    <div class="heading">
+        <h3 class="parFirst">Send us a message!</h3>
+    </div>
+
+    <form action="https://formspree.io/f/xbjvgvyp" method="POST">
+    
+        <div class="headingForm">
+            <label>
+            Your email:
+            <input  class="text-input" type="email" name="email" required="">
+            </label>
+        </div>
+    
+        <div class="headingForm">
+            <label>
+            Your message:
+            <textarea class="text-input" name="message" required=""></textarea>
+            </label>
+        </div>
+        
+        <div class="headingForm">
+            <button class="btnMessage" type="submit">Send</button>
+        </div> 
+        </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
