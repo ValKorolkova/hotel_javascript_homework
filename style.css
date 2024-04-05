@@ -81,22 +81,22 @@ h4 {
     opacity: 1;
 }
 .one {
-    background-image: url(01apart.jpg);
+    background-image: url(/img/01apart.jpeg);
 }
 .two {
-    background-image: url(02apart.jpg);
+    background-image: url(/img/02apart.jpeg);
 }
 .three {
-    background-image: url(03apart.jpg);
+    background-image: url(/img/03apart.jpeg);
 }
 .four {
-    background-image: url(04apart.jpg);
+    background-image: url(/img/04apart.jpeg);
 }
 .five {
-    background-image: url(05apart.jpg);
+    background-image: url(/img/05apart.jpeg);
 }
 .six {
-    background-image: url(06apart.jpg);
+    background-image: url(/img/06apart.jpeg);
 }
 
 
